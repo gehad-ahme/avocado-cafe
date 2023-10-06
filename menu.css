@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body {
+    background-color: #efefef;
+}
+::-webkit-scrollbar {
+    height:.5rem ;
+    width: 1rem;
+
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #102C57;
+}
+*::selection {
+    background-color: #DAC0A3;
+    color: white;
+}
+
+html {
+    
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    padding: 0 10px 30px 10px;
+    
+}
+.menu .heading {
+    background-color: #102C57;
+    color: #DAC0A3;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    text-align: center;
+}
+.menu .heading h1{
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.menu .heading h3{
+    font-size: 1.5rem;
+}
+.items .menu-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+}
+.items .menu-item .food-item {
+    padding: 5rem;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(16, 44, 87, 0.523);
+}
+.items .menu-item .food-item img:hover {
+    transform: scale(1.1);
+}
+.food-item img {
+    height: 15rem;
+}
+.items .menu-item .food-item .price {
+    font-size: 2rem;
+    color: #102C57;
+}
+.items .menu-item .food-item .price span {
+    font-size: 1.5rem;
+    color: #D8C4B6;
+    text-decoration: line-through;
+    margin-left: 3rem;
+}
+.items .menu-item .food-item h3 {
+    font-size: 1.5rem;
+    padding-top:1rem;
+}
+.items .menu-item .food-item .btn-menu {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #102C57;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.items .menu-item .food-item .btn-menu:hover {
+    transform: scale(1.1);
+}

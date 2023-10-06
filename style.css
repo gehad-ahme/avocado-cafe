@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body {
+    background-color: #f3f3f3;
+}
+::-webkit-scrollbar {
+    height:.5rem ;
+    width: 1rem;
+
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #102C57;
+}
+*::selection {
+    background-color: #DAC0A3;
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #102C57;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 2rem;  
+}
+
+
+
+.header .flex .logo img{
+    height: 7rem;
+    width: 9rem;
+    
+}
+
+.header .flex .navbar a {
+   margin-left: 3rem;
+    font-size: 2rem;
+    color: #fff;
+
+}
+.header .flex  .navbar .login  {
+    color: #DAC0A3;
+    font-size: 2.5rem;
+   padding-left: 5rem;
+
+}
+.home-bg {
+    background:linear-gradient(#fff ,transparent) ,url(./assets/backgeround\ slider.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .flex .navbar a:hover {
+    color: #DAC0A3;
+    text-decoration: underline;
+}
+
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #EADBC8;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #102C57;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+.btn:hover {
+    background-color: #DAC0A3;
+    transform: scale(1.1);
+}
+
+.home-bg .home {
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+}
+.home-bg .home .content {
+    width: 50rem;
+    text-align: center;
+}
+.home-bg .home h3 {
+    font-size: 6rem;
+    font-family:"Merenda One",cursive;
+    color: #102C57;
+    
+}
+.home-bg .home p {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.about .image {
+    flex: 1 1 40rem;
+}
+
+.about .image img{
+    width: 80%;
+}
+.about .content {
+    flex: 1 1 40rem;
+   
+}
+
+.about .content h3 {
+    font-size: 5rem;
+    color: #102C57;
+    font-family:"Merenda One",cursive;
+    padding-bottom: 1rem;
+}
+.about .content p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color:rgba(0, 0, 0, 0.549);
+}
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading h3 {
+    font-size: 4rem;
+    color: #102C57;
+    font-family:"Merenda One",cursive;
+    padding-bottom: 3rem;
+}
+
+.menu .box-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+    
+}
+.menu .box-container h3 {
+    font-size: 2rem;
+    align-items: center;
+    padding: 1rem 0;
+}
+.menu .box-container .box {
+    width: 40rem;
+}
+.menu .box-container .box p {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color:rgba(0, 0, 0, 0.549);
+}
+
+.product .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1,5rem;
+}
+.product .box-container .box {
+    padding: 5rem;
+    text-align: center;
+
+}
+.product .box-container .box img {
+    height: 30rem;
+}
+.product .box-container .box:hover img {
+    
+    transform: scale(1.1);
+
+}
+.product .heading {
+    font-size: 4rem;
+    color: #102C57;
+    font-family:"Merenda One",cursive;
+
+}
+.product .box-container .box .price {
+    font-size: 3rem;
+    color: #102C57;
+
+}
+.product .box-container .box .price span {
+    font-size: 2rem;
+    color: #D8C4B6;
+    text-decoration: line-through;
+    margin-left: 3rem;
+}
+.product .box-container .box h3 {
+    font-size: 2rem;
+    padding-top:1rem;
+}
+.photo .gallary_image_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    row-gap: 3rem;  
+}
+
+.photo h3 {
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: #102C57;
+    font-family:"Merenda One",cursive;
+
+}
+.photo .gallary_image_box .gallary_image {
+   
+    text-align: center;
+    
+}
+
+.photo .gallary_image_box .gallary_image img {
+    height: 35rem;
+    width: 30rem;
+    transition: 0.3s;
+}
+.photo .gallary_image_box .gallary_image:hover img {
+    opacity: 0.4;
+    transform: scale(1.1);
+}
+.photo .gallary_image_box .gallary_image h2 {
+    font-size: 2rem;
+}
+.chosse_us {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+}
+.chosse_us .img {
+    flex: 1 1 40rem;
+}
+
+.chosse_us .img img {
+    width: 100%;
+}
+
+.chosse_us .content {
+    flex: 1 1 40rem;
+}
+.chosse_us .content h3 {
+    font-size: 5rem;
+    color: #102C57;
+    font-family:"Merenda One",cursive;
+    padding-bottom: 5rem;
+}
+.chosse_us .content p {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color:rgba(0, 0, 0, 0.549);
+}
+.chosse_us .content .icons_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+.chosse_us .content .icons_container .icon {
+    flex: 1 1 15rem;
+    padding: 1.5rem;
+    text-align: center;
+    border:.5rem solid #443 ;
+    border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+}
+.chosse_us .content .icons_container .icon h4 {
+    font-size: 2rem;
+}
+.chosse_us .content a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #102C57;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+.chosse_us .content a:hover {
+    background-color: #DAC0A3;
+    transform: scale(1.1);
+}
+
+.experiance {
+    display: flex;
+}
+.experiance .content_box {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    background-color:#dac0a3b9;
+    border:.5rem solid #102C57 ;
+    border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+}
+.experiance .content_box .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.experiance .content_box .content h3 {
+    font-size: 4rem;
+    color: #102C57;
+}
+.experiance .content_box .content p {
+    font-size: 2rem;
+    color: #443;
+}
+.footer {
+    background-color: #242424f2;
+    padding: 70px 0;
+}
+.footer .container {
+    max-width: 1170px;
+    margin: auto;
+    
+}
+.footer .container ul {
+    list-style: none;
+}
+.footer .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer .container .row .footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer .container .row .footer-col h4 {
+    font-size:18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #DAC0A3;
+    height: 3px;
+    width: 50px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    padding-left: 8px;
+}
+
+.footer-col .social a {
+    font-size: 2.5rem;
+    color: #DAC0A3;
+    display: inline-block;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.footer-col .social a:hover {
+    transform: scale(1.3);
+}
+.footer-col p {
+    font-size: 1.3rem;
+    color: #ffff;
+}
+.review .review_slider .box {
+    border:.7rem solid #102C57 ;
+    border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+    text-align: center;
+    z-index: 0;
+    position: relative;
+    padding: 2rem;
+}
+.review .review_slider {
+    padding: 7rem 0;
+}
+.review .review_slider .box img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: .7rem;
+}
+.review .review_slider .box .stars {
+    padding: .5rem 0;
+}
+.review .review_slider .box .stars i {
+    font-size: 1.5rem;
+    color: #102C57;
+}
+.review .review_slider .box  p {
+    font-size: 1.6rem;
+    color: #443;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.review .review_slider .box h3 {
+    font-size: 2.2rem;
+    line-height: 1.8;
+
+}
+.review .review_slider .box span {
+    color: #DAC0A3;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.review .heading {
+    font-size: 5rem;
+    color: #102C57;
+    font-family:"Merenda One",cursive;
+    padding-bottom: 1rem;
+
+}
+
+.menu .heading{
+    font-size: 4rem;
+    color: #102C57;
+    font-family:"Merenda One",cursive;
+
+}
+.menu .box-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    row-gap: 3rem;  
+
+}
+.menu .box-conteiner .box {
+    
+    text-align: center;
+    padding-top: 2rem;
+}
+.menu .box-conteiner .box img {
+    height: 35vh;
+    
+}
+.menu .box-conteiner .box img:hover {
+    transform: scale(1.1);
+}
+.menu .box-conteiner .box h3 {
+    font-size: 2.5rem;
+    color: #102C57;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+
+}
+.menu .box-conteiner .box .btn-menu {
+    color: #102C57;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive  */
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading h3 {
+        font-size: 3rem;
+    }
+    .menu .box-container {
+        flex-wrap: wrap;
+       
+    }
+    .menu .box-container .box {
+        width: 25rem;
+    }
+    .product .heading{
+        font-size:  3rem;
+    }
+    .photo h3 {
+        font-size: 3rem;
+    }
+    .chosse_us .content h3 {
+        font-size: 3.5rem;
+    }
+    .chosse_us .img img {
+        
+        height: 500px;
+    }
+    .experiance .content_box .content h3 {
+        font-size: 3rem;
+    }
+    .experiance .content_box .content p {
+        font-size: 1rem;
+        
+    }
+    .experiance .content_box {
+        justify-content: space-evenly;
+    }
+    /* responsive footer */
+    .footer-col {
+        width: 100%;
+    }
+
+    /* responsive review  */
+    .review .heading {
+        font-size: 3.5rem;
+    }
+    .review .review_slider .box {
+        width: 334.5px;
+        margin-right: 20px;
+    }
+   
+
+}
+
+@media (max-width:285px){
+    .review .review_slider .box {
+        width: 241.5px;
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;left: 0;right: 0;
+        
+        background-color: #f3f3f3;
+        border-top: 1px solid #DAC0A3;
+        border-bottom: 1px solid #DAC0A3;
+        border: 1px solid #DAC0A3;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+    .header .flex .navbar .login{
+       padding-left: 1rem;
+    }
+    .header .flex .navbar a {
+        display: block;
+        margin: 2rem;
+        color: #102C57;
+    }
+    .header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  
+        
+    }
+    
+    .home-bg {
+        background-position: left;
+    }
+    .home-bg .home {
+        justify-content: center;
+    }
+    .home-bg .home .content h3 {
+        font-size: 4rem;
+    }
+    .about .content h3 {
+        font-size: 3rem;
+    }
+    /* responsive footer   */
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    
+      
+    
+}
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    
+}

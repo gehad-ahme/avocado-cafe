@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+ * {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,#DAC0A3 30%,#102C57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+ }
+ .form {
+   position: absolute;
+   background: #fff;
+   border-radius: .5rem;
+   width: 100%;
+   max-width: 430px;
+   padding: 2rem;
+ }
+ .form.signup{
+  opacity: 0;
+  pointer-events: none;
+ }
+ .forms.show-signup .form.signup{
+  opacity: 1;
+  pointer-events: auto;
+
+ }
+ .forms.show-signup .form.login{
+  opacity: 0;
+  pointer-events: none;
+ }
+ 
+ .container .form header {
+   font-size: 2.5rem;
+    color: #102C57;
+    text-align: center;
+    font-weight: 600;
+    
+ }
+ .container .form form {
+   margin-top: 1.5rem;
+ }
+ .container .form form .field {
+   width: 100%;
+   height: 50px;
+   margin-top: 20px;
+   position: relative;
+ }
+ .container .form form .field i{
+   cursor: pointer;
+   padding: 5px;
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+ }
+ .container .form form .field input {
+   height: 100%;
+   width: 100%;
+   border: none;
+   border: 1px solid #cacaca;
+   padding: 0 15px;
+   font-size: 16px;
+   font-weight: 400;
+   border-radius: 6px;
+   outline: none;
+ }
+ .container .form form .field input:focus {
+   border-bottom-width:2px ;
+   border-bottom-color:#102C57 ;
+ }
+ .container .form form .field button {
+   height: 100%;
+   width: 100%;
+   border: none;
+   background-color: #102C57;
+   color: #fff;
+   border-radius: .5rem;
+   font-weight: 600;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+ .container .form form .field button:hover {
+   background-color: #DAC0A3;
+
+ }
+ .container .form form  .form-link {
+   text-align: center;
+   margin-top: 10px;
+ }
+ .container .form form  .form-link span, a {
+   font-size: 14px;
+   font-weight: 400;
+ }
+ .container .form form  a {
+   text-decoration: none;
+ }
+ .container .form form  a:hover {
+   text-decoration: underline;
+ }
+ .container .line {
+   position: relative;
+   height: 1px;
+   width: 100%;
+   background-color: #d4d4d4;
+   margin: 30px 0;
+ }
+ .container .line::before {
+   content: 'or';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: #fff;
+   color: #102C57;
+   padding: 0 15px;
+ }
+ .media-option a {
+   display: flex;
+   background-color: #DAC0A3;
+   text-decoration: none;
+   align-items: center;
+   justify-content: center;
+ }
+ .media-option .field {
+   width: 100%;
+   height: 50px;
+   margin-top: 20px;
+   position: relative;
+   border-radius: 6px;
+
+ }
+ .media-option span{
+   font-size: 1.2rem;
+ }
+ .media-option i {
+   font-size: 1.2rem;
+   position: absolute;
+   top: 50%;
+   left: 15px;
+   transform: translateY(-50%);
+ }
+ .media-option span,i {
+   color: #fff;
+   
+ }

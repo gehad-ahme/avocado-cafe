@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+}
+body {
+    background-image: linear-gradient(to right,#DAC0A3 10%,#102C57);
+}
+.container {
+    background-color: #fcf3ed;
+    padding: 3.5rem;
+    box-shadow: 0 0 18px 15px rgba(16, 44, 87, 0.499);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+::-webkit-scrollbar {
+    height:.5rem ;
+    width: 1rem;
+
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #102C57;
+}
+*::selection {
+    background-color: #DAC0A3;
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 15rem 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contact-us {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+.contact-us  .map {
+    flex: 9 1 32rem;
+}
+iframe {
+    width:90% ;
+    height: 100%;
+}
+.contact-us  .content {
+    flex: 3 1 30rem;
+}
+.contact-us  .content h3{
+    font-size: 4rem;
+    color: #102C57;
+    font-family:"Merenda One",cursive;
+    padding-bottom: 3rem;
+    
+}
+.contact-us  .content .input {
+    width: 100%;
+    border: 2px solid rgba(220, 206, 206, 0);
+    outline: none;
+    padding: .5rem 1rem;
+    margin-bottom:2em ;
+    transition: .3s;
+
+}
+.contact-us  .content .input:hover {
+    border-bottom-width:2px ;
+    border-bottom-color:#102C57 ;
+}
+.contact-us  .content textarea {
+    min-height:10em;
+    width: 100%;
+    border-color: #f3f3f3;
+    padding: .5rem 1rem;
+}
+.contact-us  .content textarea:focus {
+    border-bottom-width:2px ;
+    border-bottom-color:#102C57 ;
+}
+.contact-us  .content .btn {
+    width: 100%;
+    padding: .5rem 2rem;
+    background-color: #102C57;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: .3rem;
+    margin-top: 2rem;
+}
+.contact-us  .content .btn:hover {
+    background-color: #DAC0A3;
+}
+@media (max-width:450px) {
+    iframe {
+        width: 100%;
+        height:100% ;
+    }
+    body {
+        background: #DAC0A3;
+    }
+    section {
+        padding: 5rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .contact-us  .content h3{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+}
